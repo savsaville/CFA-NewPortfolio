@@ -37,8 +37,10 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #E57824;
-  outline: none; }
+  text-decoration: none;
+  color: black;
+  outline: none;
+ }
 
 h1,
 h2,
@@ -124,28 +126,7 @@ section.success {
       #mainNav .navbar-nav li.nav-item a.nav-link:focus, #mainNav .navbar-nav li.nav-item a.nav-link:active {
         color: white; }
 
-@media (min-width: 992px) {
-  #mainNav {
-    padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s; }
-    #mainNav .navbar-brand {
-      font-size: 2em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: white;
-      background: #E57824;
-      border-radius: 3px; }
-      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active {
-        color: white;
-        background: #E57824; }
-  #mainNav.navbar-shrink {
-    padding: 10px 0; }
-    #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em; } }
+
 
 header.masthead {
   text-align: center;
@@ -175,41 +156,6 @@ header.masthead {
     font-size: 4.75em; }
   header.masthead .intro-text .skills {
     font-size: 1.75em; } }
-
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0; }
-  #portfolio .portfolio-item .portfolio-link {
-    cursor: pointer;
-    display: block;
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto; }
-    #portfolio .portfolio-item .portfolio-link .caption {
-      background: rgba(24, 188, 156, 0.9);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: all ease 0.5s;
-      -webkit-transition: all ease 0.5s;
-      -moz-transition: all ease 0.5s; }
-      #portfolio .portfolio-item .portfolio-link .caption:hover {
-        opacity: 1; }
-      #portfolio .portfolio-item .portfolio-link .caption .caption-content {
-        position: absolute;
-        width: 100%;
-        height: 20px;
-        font-size: 20px;
-        text-align: center;
-        top: 50%;
-        margin-top: -12px;
-        color: white; }
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-          margin-top: -12px; }
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
-          margin: 0; }
 
 #portfolio * {
   z-index: 2; }
@@ -269,6 +215,7 @@ footer {
             display: block;
             position: relative;
             max-width: 400px;
+            overflow: hidden;
             margin: 0 auto;
             .caption {
                 background: fade-out(white, 0.1);
