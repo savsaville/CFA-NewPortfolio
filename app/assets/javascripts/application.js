@@ -63,4 +63,7 @@
         });
     });
 
+    $('portfolioModal1').modal(options)
+
+
 })(jQuery); // End of use strict
