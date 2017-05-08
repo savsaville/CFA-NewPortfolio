@@ -10,10 +10,10 @@ class ContactController < ApplicationController
       if email.present? || message.present?
         # Tell the UserMailer to send a welcome email after save
         ContactMailer.send_contact_email(email, message).deliver_now
-        redirect_to '/contact', notice: 'Email sent!'
+        redirect_to root_path, notice: 'Email sent!'
       else
         flash[:warning] = "Please fill out the form"
-        redirect_to '/contact'
+        redirect_to root_path
       end
 
     end
